@@ -1,0 +1,1 @@
+call ../lib/runLiquibase.jar ../changelog/changelog-master.xml initDatabase.log

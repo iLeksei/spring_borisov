@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tool="http://www.springframework.org/schema/tool"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tool http://www.springframework.org/schema/tool/spring-tool.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- connect all @PostConstruct and other... annotations -->
+    <context:annotation-config/>
+    <!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
+    <!-- connect all @PostConstruct and other... annotations -->
+
+    <!--    CLasses-->
+    <bean class="ru.sandbox.java_sandbox.BeanLifecycleDemo.BeanLifecycleDemo" id="beanLifecycleDemo"/>
+    <bean id="terminatorQuoter" class="ru.sandbox.java_sandbox.ClassPathBeanDemo.TerminatorQuoterImpl">
+        <property name="message" value="i'm squizzze terminator"/>
+    </bean>
+    <bean id="terminatorQuoterPostProxy" class="ru.sandbox.java_sandbox.ApplicationListenerDemo.TerminatorQuoterImpl">
+        <property name="message" value="i'm post proxy terminator"/>
+    </bean>
+    <bean class="ru.sandbox.java_sandbox.ApplicationListenerDemo.PostProxyInvokerContextListener"/>
+    <bean class="ru.sandbox.java_sandbox.BFactoryPostProcessorDemo.BFactoryTerminatorQuoterImpl"/>
+    <bean class="ru.sandbox.java_sandbox.BFactoryPostProcessorDemo.SuperTerminator"/>
+
+
+    <!--    Annotation-->
+    <bean class="ru.sandbox.java_sandbox.BeanLifecycleDemo.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="ru.sandbox.java_sandbox.ClassPathBeanDemo.ProfilingAnnotationBeanPostProcessor"/>
+    <bean class="ru.sandbox.java_sandbox.BFactoryPostProcessorDemo.DeprecationHandlerBeanFactoryPostProcessor"/>
+
+</beans>

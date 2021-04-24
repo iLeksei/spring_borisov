@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root
+        xmlns="http://localhost:3000"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://localhost:3000 games.xsd"
+>
+    <games>
+        <lineage>
+            <!--             lineage 2-->
+            <players>
+                <player>
+                    <username>DanielDefo</username>
+                    <email>dd@gmail.com</email>
+                    <age>33</age>
+                    <sex>male</sex>
+                </player>
+            </players>
+            <!--        end of lineage 2-->
+        </lineage>
+    </games>
+</root>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://localhost:3000"
+        xmlns="http://localhost:3000"
+        elementFormDefault="qualified"
+>
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="games">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="lineage">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="players">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="player">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="username" type="string"/>
+                                                                <xs:element name="email" type="string"/>
+                                                                <xs:element name="age" type="number" minOccurs="1"
+                                                                            maxOccurs="120"/>
+                                                                <xs:element name="sex" type="string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+        <!--<xs:element name="phoneNumber" type="xs:string"/>-->

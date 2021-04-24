@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <include file="s"/>
+
+    <changeSet id="initial_create_tablespace" author="zhuravlev-as" runAlways="true">
+        <sqlFile path=""/>
+    </changeSet>
+
+    <changeSet id="initial_create_users" author="zhuravlev-as" runAlways="true">
+        <sqlFile path=""/>
+    </changeSet>
+
+    <changeSet id="initial_create_changelog" author="zhuravlev-as" runAlways="true">
+        <sqlFile path=""/>
+    </changeSet>
+
+</databaseChangeLog>

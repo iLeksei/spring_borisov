@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="lineage"
+        xmlns="http://l2com"
+        elementFormDefault="qualified"
+>
+
+    <xs:element name="game">
+        <xs:complexType>
+            <xs:sequence>
+
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+        <!--<xs:element name="phoneNumber" type="xs:string"/>-->
